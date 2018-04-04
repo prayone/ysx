@@ -8,6 +8,9 @@
 				div.price
 					img(src="../../../static/img/price.png")
 				div.head_img
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
 				div.text 仅剩2个名额
 				div.timer 距离结束
 		div.join_footer
@@ -36,8 +39,8 @@
 				height 100%
 		.right_section
 			float right
+			border 1px solid red
 			.price
-				border 1px solid #aaa
 				width 270rpx 
 				height 280rpx
 				img 
@@ -48,7 +51,12 @@
 				height 105rpx
 				border 1px solid #aaa
 				margin 10rpx 0
-				
+				display flex
+				align-items center
+				img
+					border 1px solid red
+					width 86rpx 
+					height 86rpx
 			.text
 				text-align center
 				font-size 34rpx
