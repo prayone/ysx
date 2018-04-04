@@ -1,0 +1,61 @@
+<template lang='pug'>
+	div.learning 
+		div.pay_success
+			div.text_success 购买成功
+			p.text_point 请点击下方按钮开始听课
+			a(href="./index.html")
+				button.learn_btn 开始听课
+		div.course_info
+			p.course_title 课程信息 :  
+			p.course_text 每日一句古诗文课程【二年级】
+</template>
+<script>
+	export default{
+	}
+</script>
+<style lang="stylus" scoped>
+	@import './main.css'
+	.learning
+	  background-color #f7f7f7
+	  width 100%
+	  height 100%
+	  .pay_success
+	    background-color #ffffff
+	    position relative
+	    padding 40rpx 0
+	    margin-top 12rpx
+	    .text_success
+	      text-align center
+	      color #36CD8C
+	      font-size 60rpx
+	    .text_point
+	      text-align center
+	      color #333333
+	      font-size 32rpx
+	      margin-top 20rpx
+	    .learn_btn
+	      width 50%
+	      margin 72rpx auto
+	      background-color #FB8A11
+	      color #ffffff
+	  .course_info
+	    margin-top 12rpx
+	    height 106rpx
+	    line-height 106rpx
+	    box-sizing border-box
+	    overflow hidden
+	    background-color #ffffff
+	    position relative
+	    padding 0 34rpx
+	    .course_title
+	      display inline-block
+	      color #333333
+	      font-size 30rpx
+	      float left
+	    .course_text
+	        display inline-block
+	        float right
+	        color #999999
+	        font-size 28rpx
+	        text-align right
+</style>

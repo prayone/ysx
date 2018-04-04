@@ -1,0 +1,11 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "stylus:w": "mkdir css & stylus -w -m styl/ -o css/"
+  },
+  "author": "",
+  "license": "ISC"
+}
