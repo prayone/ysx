@@ -3,67 +3,100 @@
 		div.join_header
 			div.left_setion
 				div.img
-					img(src='../../../static/img/course_page.png')
+					img(src='/static/img/course_page.png')
 			div.right_section
 				div.price
-					img(src="../../../static/img/price.png")
+					img(src="/static/img/price.png")
 				div.head_img
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
-				div.text 仅剩2个名额
-				div.timer 距离结束
+					i.leader
+					div.img_circle
+						img(src="/static/img/header.png")
+					div.img_circle
+						img(src="/static/img/header.png")
+					div.img_circle
+						img(src="/static/img/header.png")
+				div.text
+					span 仅剩
+					span.number 2
+					span 个名额
+				div.count
+					span.count_text 距离结束&nbsp;
+					count
 		div.join_footer
 			button.join_btn 立即邀请好友参团
 			p.text 小提示：分享到3个家长群，成功率高达98%哦~
-
 </template>
 <script>
-	export default {
-	}
+  import count from '@/components/count'
+  export default {
+    data () {
+    },
+    components: {
+      count
+    },
+    created () {
+      console.log('1')
+    }
+
+  }
 </script>
 <style lang="stylus" scoped>
 	@import './main.css'
 	.join_header
 		overflow hidden
 		margin 12rpx
-		padding 40rpx 30rpx
+		padding 40rpx 22rpx
 		background-color #ffffff
 		.left_setion
 			float left
 			.img
-				width 370rpx 
+				width 368rpx 
 				height 510rpx
 			img
 				width 100%
 				height 100%
 		.right_section
 			float right
-			border 1px solid red
 			.price
-				width 270rpx 
+				width 290rpx 
 				height 280rpx
 				img 
 					width 100%
 					height 100%
 			.head_img
-				width 270rpx 
 				height 105rpx
-				border 1px solid #aaa
-				margin 10rpx 0
 				display flex
 				align-items center
-				img
-					border 1px solid red
+				justify-content space-between 
+				position relative
+				padding 10rpx 0
+				.leader
+					position absolute
+					bottom 6rpx
+					left -2rpx
+					display inline-block
+					width 96rpx
+					height 40rpx
+					background url('../../../static/img/leader.png') no-repeat
+					background-size 90rpx 38rpx
+				.img_circle
 					width 86rpx 
 					height 86rpx
+					border-radius 50%
+					img
+						width 100%
+						height 100%
 			.text
 				text-align center
 				font-size 34rpx
-				color #555555	
-			.timer
-				margin 7rpx 0
-				font-size 30rpx 
+				color #555555
+				.number 
+					font-size 36rpx
+					color #FB8A11
+					font-weight bold
+			.count
+				margin 10rpx 0
+				font-size 32rpx 
 				color #555555
 	.join_footer
 		background-color #ffffff
@@ -74,11 +107,11 @@
 		.join_btn
 			width 90%
 			margin 0 auto
-			height 90rpx
-			line-height 90rpx
+			height 100rpx
+			line-height 100rpx
 			background-color #FB8A11
 			color #ffffff
-			border-radius 2px
+			border-radius 5px
 			border none
 		.text
 			text-align center
