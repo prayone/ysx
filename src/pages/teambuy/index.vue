@@ -32,9 +32,10 @@
 		div.footer.common_class
 			p.team_info
 				span.team_title 参团须知:
-				span.invite.same_icon 邀请好友参团
-				span.start_course.same_icon 成团即开课
-				span.back_money 不成团全额退款
+				span.team_icon
+					span.same_icon 邀请好友参团
+					span.same_icon 成团即开课
+					span.back_money 不成团全额退款
 </template> 
 <script>
     import count from '@/components/count'
@@ -137,28 +138,25 @@
 	.footer
 		height 70rpx 
 		line-height 70rpx
-		border 1px solid red
 		.team_info
 			color #777777
 			font-size 24rpx
 			.team_title
 				color #333333
 				font-size 30rpx
-			span
+			.team_icon
 				display inline-block
-				text-align center
-				height 50rpx
-				line-height 50rpx
+				width 546rpx 
+				height 46rpx
+				line-height 46rpx
+				background url('../../../static/img/team_info1.png') left center no-repeat
 				background-size 100% 100%
-				
-			.same_icon
-				width 170rpx 
-			.invite
-				background url('../../../static/img/invite.png') left center no-repeat
-			.start_course
-				background url('../../../static/img/start_course.png') left center no-repeat
-			.back_money
-				width 204rpx
-				background url('../../../static/img/back_money.png') left center no-repeat
-				
+				.same_icon
+					display inline-block
+					width 167rpx 
+					text-align center
+				.back_money
+					display inline-block
+					width 204rpx 
+					text-align center
 </style>
