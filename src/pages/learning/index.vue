@@ -3,7 +3,6 @@
 		div.pay_success
 			div.text_success 购买成功
 			p.text_point 请点击下方按钮开始听课
-			a(href="./index.html")
 				button.learn_btn 开始听课
 		div.course_info
 			p.course_title 课程信息 :  
