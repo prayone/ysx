@@ -10,7 +10,7 @@
 				div.head_img
 					i.leader
 					div.img_circle
-						img(src="/static/img/header.png")
+						img(src="/static/img/team_leader.png")
 					div.img_circle
 						img(src="/static/img/header.png")
 					div.img_circle

@@ -17,10 +17,10 @@
 			div.head_img
 				div.img_circle
 						i.leader_icon
-						img(src="/static/img/header.png")
+						img(src="/static/img/team_leader.png")
 				div.img_circle
-					img(src="/static/img/header.png")
-				div.img_circle(@click="jump")
+					img(src="/static/img/wjr1.png")
+				div.img_circle
 					img(src="/static/img/header.png")
 			div.text
 				span 仅剩
@@ -44,10 +44,6 @@
         count
       },
       methods: {
-        jump () {
-          const url = '../invitejoin/invitejoin'
-          wx.navigateTo({url})
-        }
       }
     }
 </script>
@@ -147,8 +143,8 @@
 			.team_icon
 				display inline-block
 				width 546rpx 
-				height 46rpx
-				line-height 46rpx
+				height 50rpx
+				line-height 50rpx
 				background url('../../../static/img/team_info1.png') left center no-repeat
 				background-size 100% 100%
 				.same_icon
